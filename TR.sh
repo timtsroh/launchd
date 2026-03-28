@@ -6,7 +6,7 @@
 /bin/bash /Users/tealeaf/Local_Code/GitHub/launchd/naver_download/run.sh
 
 # 아래는 서버에서만 작동하므로 GitHub Actions에서 실행
-# /usr/local/bin/python3 /Users/tealeaf/Local_Code/GitHub/launchd/feed_dart/main.py
-# /usr/local/bin/python3 /Users/tealeaf/Local_Code/GitHub/launchd/feed_news/main.py
+# /usr/local/bin/python3 /Users/tealeaf/Local_Code/GitHub/sns_feed/feed_dart/main.py
+# /usr/local/bin/python3 /Users/tealeaf/Local_Code/GitHub/sns_feed/feed_news/main.py
 
 
