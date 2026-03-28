@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.tealeaf.naver_download</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/tealeaf/Local_Code/GitHub/launchd/naver_download/run.sh</string>
+    </array>
+
+    <!-- 매일 KST 09:20 실행 (시스템 시간대: Asia/Seoul) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>20</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tealeaf/Local_Code/GitHub/launchd/naver_download/logs/stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tealeaf/Local_Code/GitHub/launchd/naver_download/logs/stderr.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/tealeaf/.local/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/tealeaf</string>
+        <key>LANG</key>
+        <string>ko_KR.UTF-8</string>
+    </dict>
+</dict>
+</plist>
